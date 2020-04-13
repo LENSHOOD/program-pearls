@@ -23,9 +23,9 @@ public class SortIntegerFileTest {
 
     @Test
     void should_return_all_set_bit_of_byte() {
-        // 0101 0110
-        byte b = 86;
+        // 1011 0110
+        byte b = -74;
         int[] indexes = SortedIntegerManager.getBits(b);
-        assertThat(Arrays.stream(indexes).boxed().collect(Collectors.toList()), contains(0, 1, 1, 0, 1, 0, 1, 0));
+        assertThat(Arrays.stream(indexes).boxed().collect(Collectors.toList()), contains(0, 1, 1, 0, 1, 1, 0, 1));
     }
 }
