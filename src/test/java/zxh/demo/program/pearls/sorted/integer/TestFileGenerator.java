@@ -1,3 +1,5 @@
+package zxh.demo.program.pearls.sorted.integer;
+
 import org.junit.jupiter.api.Test;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -7,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.Random;
 
 /**
- * TestFileGenerator:
+ * zxh.demo.program.pearls.sorted.integer.TestFileGenerator:
  * @author zhangxuhai
  * @date 2020/4/12
 */
