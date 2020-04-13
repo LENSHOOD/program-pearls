@@ -21,15 +21,14 @@ public class SortedIntegerManager {
     }
 
     public void push(int num) {
-        int baseIndex = num / 8 + 1;
+        int baseIndex = num / 8;
         int modIndex = num % 8;
         store[baseIndex] = (byte) (store[baseIndex] | MASKS[modIndex]);
     }
 
-
     public int popNaturalOrder() {
         while (popPointer < maxPop) {
-            int baseIndex = popPointer / 8 + 1;
+            int baseIndex = popPointer / 8;
             int modIndex = popPointer % 8;
             int[] bits = getBits(store[baseIndex]);
             for (int i = modIndex; i < 8; i++) {
